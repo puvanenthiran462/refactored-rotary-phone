@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo-white.png"></a>
+        <div class="nav-link" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#course">COURSE</a></li>
+                <li><a href="contact.html.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars"  onclick="showmenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+        <p>We would like to respond to your quries and help you succeed.<br>
+            Feel free to get in touch with us.</p>
+    </section>
+
+<!--contact form-->
+<section id="contact">
+    <div class="container">
+        
+        <div class="contact-form">
+            <div class="row">
+                <div class="col">
+                    <i class="fa fa-home"></i>
+                <span>
+                <h5>XYZ Road, ABC Building</h5>
+                <p>New Delhi, India</p>
+
+                </span><br>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+1 1234567890</h5>
+                    <p>Mondat to Saturday, 10AM to 6PM </p>
+                </span><br>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>info@email.com</h5>
+                    <p>Email us your query</p>
+                </span> 
+            </div>
+            <div>
+               
+            </div>
+        
+                
+                <form>
+                    <input type="text" placeholder="your name" required>
+                    <input type="email" placeholder="your email" required>
+                    <input type="text" placeholder="subject" required>
+                    <input type="text" placeholder="your message" required>
+                    <button class="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+   
+<!--Footer content goes here-->
+    
+    <section class="footer" id="about">
+        <h4>About Us</h4>
+        <p>We are a leading non-state higher education institute.
+        <br>We are members of the Association of Commonwealth Universities (ACU),<br> 
+            as well as the International Association of Universities (IAU).
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-whatsapp"></i>
+        </div>
+        <div class="f">
+            <p>Prime Academy&copy;. All rights reserved.</p>
+        </div>
+    </section>
+   
+
+<!------js function--->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0";   
+        }
+
+        function hidemenu(){
+            navlinks.style.right = "-200px";   
+        }
+    </script>
+</body>
+</html>
